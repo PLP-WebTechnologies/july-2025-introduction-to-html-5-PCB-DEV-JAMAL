@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<!-- saved from url=(0032)http://127.0.0.1:5500/Index.html -->
+<html lang="en,"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="Senior" content="A sample HTML5 web page demonstrating accessibility and SEO best practices.">
+  <title>Accessible &amp; SEO-Friendly HTML5 Page</title>
+</head>
+<body>
+  <header>
+    <h1>Welcome to My Accessible HTML5 Page!</h1>
+    <nav aria-label="Main Navigation">
+      <ul>
+        <li><a href="http://127.0.0.1:5500/Index.html#about">About</a></li>
+        <li><a href="http://127.0.0.1:5500/Index.html#services">Services</a></li>
+        <li><a href="http://127.0.0.1:5500/Index.html#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="about">
+      <h1>About This Page</h1>
+    <p>By incorporating HTML5 semantic elements, this page ensures better navigation, screen reader compatibility, and optimized indexing.</p>
+      
+    </section>
+
+    <section id="services">
+      <h2>Services Provided</h2>
+      <article>
+        <h3>Web Accessibility</h3>
+        <p>Ensuring websites are usable by people with disabilities through proper HTML structure and ARIA attributes.</p>
+      </article>
+      <article>
+        <h3>SEO Optimization</h3>
+        <p>Improving site visibility with well-structured content, descriptive headings, and optimized metadata.</p>
+      </article>
+    </section>
+
+    <section id="contact">
+      <h2>Contact Information</h2>
+      <address>
+        <p>Email: <a href="http://127.0.0.1:5500/aliiraheem987@gmail.com">aliiraheem987@gmail.com</a></p>
+        <p>Phone: <a href="tel:719303660">(+254)719303660
+        </a></p>
+      </address>
+    </section>
+  </main>
+
+  <footer>
+    <p>©Jamal's Website</p>
+  </footer>
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+
+</body></html>
